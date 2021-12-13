@@ -56,7 +56,6 @@ ML_status=$(az vm list-ip-addresses -g $AZURE_RESOURCE_GROUP -n $ML_HOSTNAME --q
 <<<<<<< HEAD
     echo "$ML_HOSTNAME URL: http://$ML_status"
 =======
->>>>>>> 9e7241cb2f4bfda3da35af05e36f268855b8a442
   fi
 
 #Display AKS Kubernetes Cluster status
@@ -66,10 +65,7 @@ AKS_status=$(AKSCHECK=$(az aks show -n $AZURE_AKS_CLUSTER_NAME --resource-group 
   else
    #no error so running
     echo "AKS $AZURE_AKS_CLUSTER_NAME"
-<<<<<<< HEAD
     az aks get-credentials --resource-group $AZURE_RESOURCE_GROUP --name $AZURE_AKS_CLUSTER_NAME
-=======
->>>>>>> 9e7241cb2f4bfda3da35af05e36f268855b8a442
   fi
 
 if [ -f "$SP_FILE" ]

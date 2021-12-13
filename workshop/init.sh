@@ -43,10 +43,6 @@ load_creds(){
       AZURE_LOCATION=$(cat $CREDS_FILE | jq -r '.AZURE_LOCATION')
       RESOURCE_PREFIX=$(cat $CREDS_FILE | jq -r '.RESOURCE_PREFIX')
       AZURE_AKS_CLUSTER_NAME=$(cat $CREDS_FILE | jq -r '.AZURE_AKS_CLUSTER_NAME')
-<<<<<<< HEAD
-=======
-
->>>>>>> 9e7241cb2f4bfda3da35af05e36f268855b8a442
   else
     echo "ABORT: CREDS_FILE: $CREDS_FILE not found"
     exit 1
@@ -126,11 +122,7 @@ make_creds_file() {
   sed 's~DT_ENVIRONMENT_ID_PLACEHOLDER~'"$DT_ENVIRONMENT_ID"'~' | \
   sed 's~DT_DASHBOARD_OWNER_EMAIL_PLACEHOLDER~'"$DASHBOARD_OWNER_EMAIL"'~' | \
   sed 's~DT_PAAS_TOKEN_PLACEHOLDER~'"$DT_API_TOKEN"'~' > $CREDS_FILE
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 9e7241cb2f4bfda3da35af05e36f268855b8a442
   echo "Nice! Generated $CREDS_FILE"
   echo ""
 }
@@ -234,10 +226,5 @@ download_monaco() {
 
 make_creds_file
 create_azure_service_principal
-<<<<<<< HEAD
 #create_service_principal_monaco_config
 #download_monaco
-=======
-create_service_principal_monaco_config
-download_monaco
->>>>>>> 9e7241cb2f4bfda3da35af05e36f268855b8a442
