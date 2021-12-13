@@ -1,0 +1,11 @@
+#cloud-config
+runcmd:
+  - sudo apt-get update
+  - sudo apt-get install -y git
+  - sudo mkdir -p /home/workshop
+  - git clone https://github.com/dt-alliances-workshops/azure-modernization-dt-orders-setup.git /home/workshop/azure-modernization-dt-orders-setup
+  - sudo chown workshop:workshop -R /home/workshop
+  - sudo usermod -a -G sudo workshop
+# Dropping Dynatrace install for evals so prospects can see how easy instrumentation is directly
+#  - wget -O /tmp/Dynatrace-OneAgent-Linux.sh DT_BASEURL_PLACEHOLDER/api/v1/deployment/installer/agent/unix/default/latest?Api-Token=DT_PAAS_TOKEN_PLACEHOLDER&arch=x86&flavor=default
+  - sudo /home/workshop/azure-modernization-dt-orders-setup/provision-scripts/_setup-host.sh dt-orders-monolith > /tmp/cloud-init-monolith.log

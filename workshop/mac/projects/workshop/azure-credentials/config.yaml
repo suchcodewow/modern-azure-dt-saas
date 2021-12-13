@@ -1,0 +1,8 @@
+config:
+- credentials: "azure-credentials.json"
+
+credentials:
+- name: "azure-modernize-workshop"
+- appId: "1d40303c-d3f8-40a1-93ac-0c4758cf0f75"
+- directoryId: "70ebe3a3-5b30-435d-9d67-7716d74ca190"
+- key: "gI2NG1V08~IwxjgprGQ5RPlHdPx~3KF6Xe"

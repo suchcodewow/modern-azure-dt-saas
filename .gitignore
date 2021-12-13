@@ -1,0 +1,15 @@
+# misc files
+.DS_Store
+.logs
+todo.txt
+delete.yaml
+NOTUSED
+
+# generated files
+learner-scripts/create-dynatrace-secret.sh
+learner-scripts/cr.yaml
+mac/projects/workshop/azure-credentials/
+install.sh
+
+# downloaded files
+workshop-config/monaco

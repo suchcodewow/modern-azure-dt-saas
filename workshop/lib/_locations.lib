@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CREDS_FILE="./gen/workshop-credentials.json"
+SP_FILE="./gen/workshop-azure-service-principal.json"
+MONACO_PROJECT_BASE_PATH="./mac/projects"
+MONACO_ENVIONMENT_FILE="./mac/environments.yaml"
+AZURE_SP_JSON_FILE="./gen/workshop-azure-service-principal.json"
+INIT_FILE_GEN="./gen/cloud-init-monolith.txt"
+ACTIVE_GATE_FILE="./gen/cloud-init-activegate.txt"
+MONACO_PROJECT_BASE_PATH="./mac/projects"
+MONACO_ENVIONMENT_FILE="./mac/environments.yaml"
+CREDS_TEMPLATE_FILE="./templates/workshop-credentials"
